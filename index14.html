@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: 10% 20% 60% 10%;
+            grid-template-rows: 10% 20% 60% 10%;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+        }
+        .navBar{
+            grid-column: 1/5;
+            grid-row: 1/2;
+            border: solid;
+            background-color: aquamarine;
+        }
+        .sideNav{
+            grid-column: 1/2;
+            grid-row: 2/4;
+            border: solid;
+            background-color: rgb(196, 229, 255);
+        }
+        .mainDiv {
+            grid-column: 2/5;
+            grid-row: 2/4;
+            border: solid;
+            grid-template-columns: repeat(4, 1fr);
+            background: linear-gradient(to right,rgb(0, 0, 80),rgb(0, 0, 0));
+        }
+        .footer{
+            grid-column: 1/5;
+            grid-row: 4/5;
+            border: solid;
+            background-color: navy;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navBar"> </div>
+        <div class="sideNav"></div>
+        <div class="mainDiv"></div>
+        <div class="footer"></div>
+</body>
+</html>
